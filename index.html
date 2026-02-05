@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Your Premium Online Shopping Destination</title>
+    <meta name="description" content="Discover millions of products at ShopHub. Fast delivery, great prices, and exceptional customer service. Shop electronics, fashion, home & more.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>ShopHub</span>
+                </a>
+                
+                <div class="search-bar">
+                    <select class="search-category">
+                        <option value="all">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Kitchen</option>
+                        <option value="books">Books</option>
+                        <option value="beauty">Beauty</option>
+                    </select>
+                    <input type="text" placeholder="Search for products, brands and more..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="nav-right">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-heart"></i>
+                    <span>Wishlist</span>
+                    <span class="badge">3</span>
+                </a>
+                <a href="cart.html" class="nav-link cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                    <span class="badge">5</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Categories Bar -->
+        <div class="categories-bar">
+            <div class="categories-container">
+                <a href="#" class="category-item">
+                    <i class="fas fa-laptop"></i>
+                    <span>Electronics</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Fashion</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-home"></i>
+                    <span>Home & Kitchen</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-book"></i>
+                    <span>Books</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-spa"></i>
+                    <span>Beauty</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Sports</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </a>
+                <a href="#" class="category-item">
+                    <i class="fas fa-baby"></i>
+                    <span>Baby</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Premium Electronics</h1>
+                        <p class="hero-subtitle">Up to 50% off on latest gadgets</p>
+                        <a href="products.html" class="hero-btn">Shop Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <i class="fas fa-laptop hero-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Fashion Forward</h1>
+                        <p class="hero-subtitle">Trending styles for every season</p>
+                        <a href="products.html" class="hero-btn">Explore Collection</a>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <i class="fas fa-tshirt hero-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Home Essentials</h1>
+                        <p class="hero-subtitle">Transform your living space</p>
+                        <a href="products.html" class="hero-btn">Discover More</a>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-wrapper">
+                            <i class="fas fa-couch hero-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hero-nav hero-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="hero-nav hero-next"><i class="fas fa-chevron-right"></i></button>
+        <div class="hero-dots"></div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Deals</h3>
+                    <p>Limited time offers</p>
+                    <a href="#" class="deal-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over $50</p>
+                    <a href="#" class="deal-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Special Offers</h3>
+                    <p>Exclusive member deals</p>
+                    <a href="#" class="deal-link">Join Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Daily Discounts</h3>
+                    <p>Save up to 70%</p>
+                    <a href="#" class="deal-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Showcase -->
+    <section class="categories-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Smartphones</h3>
+                    <p>Latest models</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio</h3>
+                    <p>Premium sound</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Cameras</h3>
+                    <p>Capture moments</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-watch"></i>
+                    </div>
+                    <h3>Smartwatches</h3>
+                    <p>Stay connected</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>TVs</h3>
+                    <p>Entertainment hub</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Tech essentials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="products-section trending-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <a href="products.html" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid" id="trendingProducts">
+                <!-- Products will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About ShopHub</h3>
+                    <p>Your trusted online shopping destination for quality products at great prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
